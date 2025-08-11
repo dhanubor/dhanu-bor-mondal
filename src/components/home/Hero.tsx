@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
-import dhanu from '@/app/images/dhanu.jpg'
+import dhanu from '@/app/images/projects/Dhanu-01.jpg'
 import { Linkedin } from 'lucide-react'
 import { BsYoutube } from 'react-icons/bs'
 import { FaGithub } from 'react-icons/fa' // Github icon

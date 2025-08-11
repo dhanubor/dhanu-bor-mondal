@@ -2,11 +2,10 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { HireMeCTA } from '@/components/home/HireMeCTA'
 import { Button } from '@/components/ui/button'
 import dhanu from '@/app/images/projects/image.jpg'
 
-const About = () => {
+const AboutMe = () => {
   return (
     <section className='relative py-20 bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-gray-800 overflow-hidden'>
       {/* Top background shape */}
@@ -93,6 +92,7 @@ const About = () => {
             {[
               'Next.js',
               'React',
+              'JavaScript',
               'TypeScript',
               'Node.js',
               'MongoDB',
@@ -123,10 +123,8 @@ const About = () => {
           </div>
         </motion.div>
       </div>
-
-      <HireMeCTA />
     </section>
   )
 }
 
-export default About
+export default AboutMe
