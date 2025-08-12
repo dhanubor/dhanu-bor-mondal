@@ -1,42 +1,26 @@
 'use client'
 
-import React, { useRef, useState, FormEvent } from 'react'
-import emailjs from '@emailjs/browser' // ✅ নতুন প্যাকেজ
+import React, { useState, FormEvent } from 'react'
 
 const ContactForm: React.FC = () => {
-  const formRef = useRef<HTMLFormElement>(null)
   const [loading, setLoading] = useState(false)
   const [status, setStatus] = useState('')
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setLoading(true)
+    setStatus('')
 
-    if (!formRef.current) return
-
-    emailjs
-      .sendForm(
-        'dhanubor121', // MailJS Service ID
-        'template_o4772cb', // MailJS Template ID
-        formRef.current,
-        '2SpP0k6JnCxetSSUn' // MailJS Public Key
-      )
-      .then(
-        () => {
-          setStatus('✅ Message sent successfully!')
-          setLoading(false)
-          formRef.current?.reset()
-        },
-        (error) => {
-          setStatus('❌ Failed to send message. Try again.')
-          console.error(error)
-          setLoading(false)
-        }
-      )
+    // এখানে মেইল পাঠানো নেই, শুধু সিমুলেট করছি
+    setTimeout(() => {
+      setLoading(false)
+      setStatus('✅ Message sent successfully! (Simulation)')
+      e.currentTarget.reset()
+    }, 1500)
   }
 
   return (
-    <form ref={formRef} onSubmit={sendEmail} className='space-y-4'>
+    <form onSubmit={sendEmail} className='space-y-4'>
       <input
         type='text'
         name='user_name'
