@@ -3,7 +3,7 @@ import { Card } from '@/components/ui/card'
 import { Mail, MapPin, Phone } from 'lucide-react'
 import React from 'react'
 
-const Contant = () => {
+const Contact = () => {
   return (
     <div>
       <section>
@@ -18,8 +18,7 @@ const Contant = () => {
                 Contact Us
               </h1>
               <p className='mt-6 text-lg leading-8 text-muted-foreground'>
-                Have a project in mind? I am ready to turn your vision into
-                reality
+                Have a project in mind? I am ready to turn your vision into reality
               </p>
             </div>
           </div>
@@ -31,8 +30,7 @@ const Contant = () => {
             <div>
               <h2 className='text-3xl font-bold mb-4'>Get in touch</h2>
               <p className='text-muted-foreground mb-10'>
-                Tell me about your project and how i can help you achieve your
-                goals.
+                Tell me about your project and how I can help you achieve your goals.
               </p>
 
               <div className='space-y-6'>
@@ -43,7 +41,6 @@ const Contant = () => {
                   </div>
                   <div>
                     <h3 className='font-medium'>Email me</h3>
-
                     <p className='mt-2 text-primary'>
                       nikhilmistry121203@gmail.com
                     </p>
@@ -57,7 +54,6 @@ const Contant = () => {
                   </div>
                   <div>
                     <h3 className='font-medium'>Visit me</h3>
-
                     <p className='mt-2'>
                       Dhumghat Shyamnagor Satkhira Bangladesh
                     </p>
@@ -94,4 +90,4 @@ const Contant = () => {
   )
 }
 
-export default Contant
+export default Contact
