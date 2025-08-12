@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactForm = () => {
   return (
-    <form className='space-y-4' onSubmit={(e) => e.preventDefault()}>
+    <form className='space-y-4' >
       <input
         type='text'
         name='user_name'
