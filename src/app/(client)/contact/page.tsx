@@ -18,7 +18,8 @@ const Contant = () => {
                 Contact Us
               </h1>
               <p className='mt-6 text-lg leading-8 text-muted-foreground'>
-                Have a project in mind? I'd love to hear about it.
+                Have a project in mind? I’m ready to turn your vision into
+                reality
               </p>
             </div>
           </div>
