@@ -1,26 +1,8 @@
-'use client'
+import React from 'react'
 
-import React, { useState, FormEvent } from 'react'
-
-const ContactForm: React.FC = () => {
-  const [loading, setLoading] = useState(false)
-  const [status, setStatus] = useState('')
-
-  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setLoading(true)
-    setStatus('')
-
-    // এখানে মেইল পাঠানো নেই, শুধু সিমুলেট করছি
-    setTimeout(() => {
-      setLoading(false)
-      setStatus('✅ Message sent successfully! (Simulation)')
-      e.currentTarget.reset()
-    }, 1500)
-  }
-
+const ContactForm = () => {
   return (
-    <form onSubmit={sendEmail} className='space-y-4'>
+    <form className='space-y-4' onSubmit={(e) => e.preventDefault()}>
       <input
         type='text'
         name='user_name'
@@ -45,13 +27,10 @@ const ContactForm: React.FC = () => {
 
       <button
         type='submit'
-        disabled={loading}
         className='bg-primary text-black px-4 py-2 rounded hover:bg-primary/80 transition'
       >
-        {loading ? 'Sending...' : 'Send Message'}
+        Send Message
       </button>
-
-      {status && <p className='text-sm mt-2'>{status}</p>}
     </form>
   )
 }
