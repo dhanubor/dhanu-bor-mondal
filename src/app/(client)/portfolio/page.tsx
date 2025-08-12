@@ -14,15 +14,6 @@ const Page = () => {
           </h3>
         </div>
 
-        {/* Featured Projects */}
-        <div className='text-center my-7'>
-          <h1 className='text-4xl font-semibold'>Featured Projects</h1>
-          <h3 className='text-xl mt-4 text-gray-600'>
-            Browse my collection of work across various industries and
-            technologies.
-          </h3>
-        </div>
-
         {/* Projects */}
         <ProjectGrid />
       </section>

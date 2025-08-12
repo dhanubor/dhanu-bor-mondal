@@ -8,6 +8,7 @@ import dhanu from '@/app/images/projects/Dhanu-01.jpg'
 import { Linkedin } from 'lucide-react'
 import { BsYoutube } from 'react-icons/bs'
 import { FaGithub } from 'react-icons/fa' // Github icon
+import { FaUpwork } from 'react-icons/fa6'
 
 const socialLinks = [
   {
@@ -24,6 +25,11 @@ const socialLinks = [
     name: 'GitHub',
     href: 'https://github.com/dhanubor',
     icon: FaGithub,
+  },
+  {
+    name: 'Fivver',
+    href: 'https://github.com/dhanubor',
+    icon: FaUpwork,
   },
 ]
 

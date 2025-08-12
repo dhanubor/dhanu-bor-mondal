@@ -42,25 +42,25 @@ const Footer = () => {
   const socialLinks: SocialLink[] = [
     {
       name: 'GitHub',
-      href: 'https://github.com/yourusername',
+      href: 'https://github.com/dhanubor',
       icon: <Github className='w-5 h-5' />,
       label: 'Visit my GitHub profile',
     },
     {
       name: 'LinkedIn',
-      href: 'https://linkedin.com/in/yourusername',
+      href: 'https://www.linkedin.com/in/dhanu-bor-mondal-72788727b/',
       icon: <Linkedin className='w-5 h-5' />,
       label: 'Connect with me on LinkedIn',
     },
     {
       name: 'Twitter',
-      href: 'https://twitter.com/yourusername',
+      href: 'https://x.com/Dhanu78996754',
       icon: <Twitter className='w-5 h-5' />,
       label: 'Follow me on Twitter',
     },
     {
       name: 'Email',
-      href: 'mailto:hello@yourname.com',
+      href: 'mailto:nikhilmistry121203@gmail.com',
       icon: <Mail className='w-5 h-5' />,
       label: 'Send me an email',
     },
@@ -73,31 +73,31 @@ const Footer = () => {
       links: [
         { name: 'Home', href: '/' },
         { name: 'About', href: '/about' },
-        { name: 'Projects', href: '/projects' },
-        { name: 'Blog', href: '/blog' },
+        { name: 'Projects', href: '/portfolio' },
+        // { name: 'Blog', href: '/blog' },
         { name: 'Contact', href: '/contact' },
       ],
     },
     {
       title: 'Projects',
       links: [
-        { name: 'E-commerce App', href: '/projects/ecommerce-app' },
-        { name: 'Task Manager', href: '/projects/task-manager' },
-        { name: 'Portfolio Site', href: '/projects/portfolio-site' },
-        { name: 'All Projects', href: '/projects' },
+        { name: 'Food Expiry Tracker', href: 'https://foodexpirytracker-b19c4.firebaseapp.com/' },
+        { name: 'Sports Club Management', href: 'https://sportaclub-e3e7e.web.app/' },
+        { name: 'MangoCare Tracker', href: 'https://mangocare-tracker.web.app/' },
+       
       ],
     },
     {
       title: 'Resources',
       links: [
-        { name: 'Resume', href: '/resume.pdf', external: true },
+        { name: 'Resume', href: '/dhanu-bor.pdf', external: true },
         {
           name: 'Use This Template',
-          href: 'https://github.com/yourusername/portfolio-template',
+          href: 'https://github.com/dhanubor/dhanu-bor-mondal',
           external: true,
         },
-        { name: 'Blog RSS', href: '/feed.xml', external: true },
-        { name: 'Sitemap', href: '/sitemap.xml', external: true },
+        // { name: 'Blog RSS', href: '/feed.xml', external: true },
+        // { name: 'Sitemap', href: '/sitemap.xml', external: true },
       ],
     },
   ]
@@ -139,7 +139,7 @@ const Footer = () => {
                 <span className='text-white font-bold text-sm'>JD</span>
               </div>
               <span className='text-xl font-bold text-gray-900 dark:text-white'>
-                John Doe
+                Dhanu Bor Mondal
               </span>
             </div>
             <p className='text-gray-600 dark:text-gray-400 mb-6 text-sm leading-relaxed'>
@@ -151,15 +151,16 @@ const Footer = () => {
             <div className='space-y-2 text-sm text-gray-600 dark:text-gray-400'>
               <div className='flex items-center space-x-2'>
                 <MapPin className='w-4 h-4' />
-                <span>San Francisco, CA</span>
+                <span>Dhumghat Shyamnagor Satkhira Bangladesh</span>
               </div>
               <div className='flex items-center space-x-2'>
                 <Phone className='w-4 h-4' />
-                <span>+1 (555) 123-4567</span>
+                <span>+8801644539394</span>
               </div>
               <div className='flex items-center space-x-2'>
                 <Mail className='w-4 h-4' />
-                <span>hello@johndoe.dev</span>
+                <span>nikhilmistry121203@gmail.com
+</span>
               </div>
             </div>
           </div>
@@ -194,7 +195,7 @@ const Footer = () => {
         </div>
 
         {/* Newsletter Section */}
-        <div className='py-8 border-t border-gray-200 dark:border-gray-800'>
+        {/* <div className='py-8 border-t border-gray-200 dark:border-gray-800'>
           <div className='max-w-md'>
             <h3 className='text-lg font-semibold text-gray-900 dark:text-white mb-2'>
               Stay Updated
@@ -229,7 +230,7 @@ const Footer = () => {
               </button>
             </form>
           </div>
-        </div>
+        </div> */}
 
         {/* Bottom Section */}
         <div className='py-6 border-t border-gray-200 dark:border-gray-800 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0'>
