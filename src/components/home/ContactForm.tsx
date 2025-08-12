@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useRef, useState, FormEvent } from 'react'
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser' // ✅ নতুন প্যাকেজ
 
 const ContactForm: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null)
@@ -62,7 +62,7 @@ const ContactForm: React.FC = () => {
       <button
         type='submit'
         disabled={loading}
-        className='bg-primary text-black px-4 py-2 rounded hover:bg-primary/80 transition '
+        className='bg-primary text-black px-4 py-2 rounded hover:bg-primary/80 transition'
       >
         {loading ? 'Sending...' : 'Send Message'}
       </button>
